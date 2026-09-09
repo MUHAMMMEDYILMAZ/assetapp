@@ -2,32 +2,7 @@ import io
 import re
 import pandas as pd
 import streamlit as st
-import streamlit as st
 
-# إخفاء الشريط العلوي بالكامل (Header)
-st.markdown(
-    """
-    <style>
-    header[data-testid="stHeader"] {
-        visibility: hidden;
-        height: 0%;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-
-)
-
-st.markdown(
-    """
-    <style>
-    .stAppToolbar {
-        visibility: hidden;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
 # ضبط إعدادات الصفحة
 st.set_page_config(
     page_title="نظام تدقيق ومطابقة أجهزة Intune وسجل العهدة",
